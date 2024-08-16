@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    position: relative;
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('./asst/Images/backgound.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    opacity: 0.5;
+    z-index: -1;
+}
+
+header, main, footer {
+    z-index: 1;
+    position: relative;
+}
+
+header {
+    background-color: #2a7acf;
+    color: white;
+    padding: 20px 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo h1 {
+    font-size: 24px;
+}
+
+.auth-buttons .btn {
+    background-color: white;
+    color: #2a7acf;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.auth-buttons .btn:hover {
+    background-color: #0056b3;
+    color: white;
+}
+
+main {
+    flex-grow: 1;
+    padding: 50px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cards {
+    display: flex;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    width: 300px;
+}
+
+.card img {
+    max-width: 100%;
+    border-radius: 8px;
+    height: 70%;
+    width: 150%;
+
+}
+
+.card h2 {
+    margin: 20px 0 10px;
+    font-size: x-large;
+}
+
+.card p {
+    color: #555;
+    font-size: larger;
+}
+
+footer {
+    background-color: #2a7acf;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p {
+    margin: 0;
+    font-size: medium;
+}
